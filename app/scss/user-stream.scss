@@ -1,0 +1,80 @@
+.user-post-container, .user-header {
+  max-width: 900px;
+  min-width: 400px;
+  margin:auto;
+}
+
+.post {
+  position: relative;
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%;
+  float: left;
+  margin: 15px;
+  cursor: pointer;
+  overflow: hidden;
+
+  .post-info {
+      position: absolute;
+      display: none;
+      top: 50%;  /* position the top  edge of the element at the middle of the parent */
+     left: 50%; /* position the left edge of the element at the middle of the parent */
+     color: white;
+
+     transform: translate(-50%, -50%);
+
+     span{
+         margin: 0 5px;
+     }
+  }
+
+  img {
+      width: 100%;
+  }
+  
+  &:hover {
+      box-shadow: 5px 5px 2px #888888;
+      background-color: black;
+
+      .post-info {
+          display: block;
+          color: white;
+          font-weight: bold;
+      }
+
+      img {
+          opacity: 0.5;
+      }
+  }
+
+  
+}
+
+.user-header {
+    margin: 15px auto;
+    height: 155px;
+
+    .user-avatar, .user-info {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .user-avatar {
+        width:30%;
+        img {
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    .user-info{
+        position: relative;
+        top: -30%;
+
+        span {
+            margin-right: 10px;
+            font-weight: 500;
+        }
+    }
+
+}

@@ -1,0 +1,9 @@
+<div class="comments" >
+    <a ng-if="showMoreOption" class="show-more" ng-click="loadMoreComments()">load more comments</a>
+    <div ng-repeat="comment in visibleComments">
+        <comment></comment>    
+    </div> 
+    <form  ng-submit='submit(data)'>
+        <input class="addcomment" type="text" ng-model="data.new_comment" placeholder="Add a comment..."  />
+    </form>    
+</div>

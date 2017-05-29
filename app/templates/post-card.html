@@ -1,0 +1,21 @@
+<div class="center card">
+      <!-- Header with username photo and time created-->
+      <div class="header">
+          <img class="post-user-avatar" ng-src={{data.user.profile_picture}} >
+          <a>{{data.user.username}}</a>
+          <span class="right">{{getTimeSince(data.created_time)}}</span>
+      </div>
+      <div class="img-container">
+          <img class="post-image" ng-src={{data.image_url}} >
+      </div>
+      <div class="footer">
+          <div class="actions">
+            <div class="action">{{data.likes.count}} Likes</div>
+            <div class="action">
+                <span ng-if="!data.user_has_liked" class="glyphicon glyphicon-heart-empty" aria-hidden="true" ng-click='changeLike($index)'></span>
+                <span ng-if="data.user_has_liked" class="glyphicon glyphicon-heart red" aria-hidden="true" ng-click='changeLike($index)'></span>  
+            </div>
+          </div>
+        <comments ng-controller="commentsController"></comments>
+      </div> 
+</div>

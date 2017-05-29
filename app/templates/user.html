@@ -1,0 +1,21 @@
+<div ng-controller="userController">
+    <div class="user-header">
+        <div class="user-avatar">
+            <img src={{user.profile_picture}}>
+        </div>
+        <div class="user-info">
+                <div>
+                    <h1>{{user.full_name}}</h1></div>
+                <div>
+                    <span>{{number_posts}} posts</span>
+                    <span>{{user.counts.follows}} followers</span>
+                    <span>{{user.counts.followed_by}} following</span>
+
+                </div>    
+        </div>
+    </div> 
+    <div class="user-post-container" >
+        <div ng-repeat="data in data">
+            <self-post-card></self-post-card>
+        </div>
+</div>    

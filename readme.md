@@ -20,7 +20,7 @@ Instagram Web UI using AngularJS 1 with following features
 It will minify and concat css and js files and copy it into  dist folder.
 
 ## Demo
-
+![](instagram.gif)
 
 
 

@@ -22,5 +22,6 @@ It will minify and concat css and js files and copy it into  dist folder.
 ## Demo
 ![](instagram.gif)
 
-
+You can also view the demo page here:[external live demo]
+(https://my-instagram.herokuapp.com)
 

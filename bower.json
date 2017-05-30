@@ -1,0 +1,17 @@
+{
+  "name": "Instagram",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Dhanashree"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dmarathe/Instagram",
+  "dependencies": {
+    "angular": "1",
+    "angular-route": "1",
+    "angular-loader": "1",
+    "html5-boilerplate": "^5.3.0",
+    "bootstrap-css": "^3.3.7"
+  }
+}
